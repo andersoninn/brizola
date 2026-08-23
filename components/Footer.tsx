@@ -11,7 +11,7 @@ export default function Footer() {
       <p>
         {campanha.cargo} · {campanha.numero} · {campanha.partido}
       </p>
-      <a href={CONFIG.POLITICA_PRIVACIDADE_URL}>Politica de privacidade</a>
+      <a href={CONFIG.POLITICA_PRIVACIDADE_URL}>Política de privacidade</a>
       <small>DADO PENDENTE: CNPJ da campanha</small>
     </footer>
   );

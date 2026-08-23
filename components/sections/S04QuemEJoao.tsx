@@ -19,7 +19,7 @@ export default function S04QuemEJoao() {
             <span key={tag}>{tag}</span>
           ))}
         </div>
-        <p className="pending">DADO PENDENTE: formacao, onde atuou e historia pessoal.</p>
+        <p className="pending">DADO PENDENTE: formação, onde atuou e história pessoal.</p>
       </Reveal>
     </section>
   );

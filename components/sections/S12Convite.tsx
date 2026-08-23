@@ -28,9 +28,9 @@ export default function S12Convite() {
         />
       </svg>
       <div>
-        <span className="eyebrow">FACA PARTE</span>
+        <span className="eyebrow">FAÇA PARTE</span>
         <h2>Nenhum legado se continua sozinho.</h2>
-        <p className="invite-lead">Ele comecou. Eu continuo. Mas quem termina e a gente.</p>
+        <p className="invite-lead">Ele começou. Eu continuo. Mas quem termina é a gente.</p>
         <div className="invite-grid">
           <form onSubmit={submit}>
             <h3>Quero fazer parte</h3>
@@ -56,7 +56,7 @@ export default function S12Convite() {
             </label>
             <label className="check">
               <input type="checkbox" required /> Aceito a{" "}
-              <a href={CONFIG.POLITICA_PRIVACIDADE_URL}>politica de privacidade</a>.
+              <a href={CONFIG.POLITICA_PRIVACIDADE_URL}>política de privacidade</a>.
             </label>
             <button className="button" type="submit">
               Quero fazer parte
@@ -71,7 +71,7 @@ export default function S12Convite() {
             <a className="button button-outline-light" href={CONFIG.VAQUINHA_URL}>
               Ajudar na vaquinha
             </a>
-            <small>Prestacao de contas aberta.</small>
+            <small>Prestação de contas aberta.</small>
           </aside>
         </div>
         <strong className="vote">VOTE 4012</strong>

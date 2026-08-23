@@ -7,7 +7,7 @@ export default function S11Metas() {
     <section id="metas" className="section goals">
       <Reveal>
         <h2>
-          O PROBLEMA DA POLITICA BRASILEIRA NAO E A FALTA DE DISCURSO. E A ESCASSEZ DE RESULTADO.
+          O PROBLEMA DA POLÍTICA BRASILEIRA NÃO É A FALTA DE DISCURSO. É A ESCASSEZ DE RESULTADO.
         </h2>
         <div className="goal-list">
           {campanha.metas.map((meta, i) => (

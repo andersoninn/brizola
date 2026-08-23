@@ -20,7 +20,7 @@ export default function S10Video() {
     <section className="section video-section">
       <div>
         <span className="eyebrow">EM PRIMEIRA PESSOA</span>
-        <h2>Dois minutos, sem intermediario.</h2>
+        <h2>Dois minutos, sem intermediário.</h2>
         <div className="video-frame" ref={playerRef}>
           {CONFIG.VIDEO_URL ? (
             <>

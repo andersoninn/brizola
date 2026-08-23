@@ -12,10 +12,10 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Joao Leonel Brizola 4012 · Deputado Federal · PSB/RJ",
   description:
-    "Brizola: uma heranca, um legado. Educacao integral, defesa do SUS, partidos democraticos e soberania. Vote 4012.",
+    "Brizola: uma herança, um legado. Educação integral, defesa do SUS, partidos democráticos e soberania. Vote 4012.",
   openGraph: {
     title: "Joao Leonel Brizola 4012",
-    description: "Brizola: uma heranca, um legado.",
+    description: "Brizola: uma herança, um legado.",
     images: ["/og.jpg"],
   },
 };

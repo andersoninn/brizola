@@ -5,10 +5,10 @@ import { campanha } from "@/content/campanha";
 
 const links = [
   ["A luta", "#promessa"],
-  ["Quem e Joao", "#quem"],
+  ["Quem é João", "#quem"],
   ["Bandeiras", "#bandeiras"],
   ["Compromissos", "#metas"],
-  ["Faca parte", "#convite"],
+  ["Faça parte", "#convite"],
 ];
 
 export default function Header() {
