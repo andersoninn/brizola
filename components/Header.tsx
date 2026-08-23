@@ -2,13 +2,19 @@
 
 import { useState } from "react";
 import { campanha } from "@/content/campanha";
+import { CONFIG } from "@/lib/config";
 
 const links = [
-  ["A luta", "#promessa"],
-  ["Quem é João", "#quem"],
-  ["Bandeiras", "#bandeiras"],
-  ["Compromissos", "#metas"],
-  ["Faça parte", "#convite"],
+  { label: "A luta", href: "#promessa" },
+  { label: "Quem é João", href: "#quem" },
+  { label: "Bandeiras", href: "#bandeiras" },
+  { label: "Compromissos", href: "#metas" },
+  {
+    label: "DOAR",
+    href: CONFIG.VAQUINHA_URL,
+    external: true,
+    className: "button button-small",
+  },
 ];
 
 export default function Header() {
@@ -31,8 +37,14 @@ export default function Header() {
         <i />
       </button>
       <nav className={open ? "nav-open" : ""}>
-        {links.map(([label, href]) => (
-          <a key={href} href={href} onClick={() => setOpen(false)}>
+        {links.map(({ label, href, external, className }) => (
+          <a
+            key={href}
+            className={className}
+            href={href}
+            onClick={() => setOpen(false)}
+            {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
             {label}
           </a>
         ))}

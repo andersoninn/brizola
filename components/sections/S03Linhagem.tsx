@@ -7,7 +7,11 @@ export default function S03Linhagem() {
     <section id="linhagem" className="section lineage">
       <Reveal>
         <span className="eyebrow">{campanha.linhagem.eyebrow}</span>
-        <h2>{campanha.linhagem.titulo}</h2>
+        <h2>
+          {campanha.linhagem.titulo.map((line) => (
+            <span key={line}>{line}</span>
+          ))}
+        </h2>
         <p className="lead">{campanha.linhagem.apoio}</p>
         <div className="lineage-grid">
           {campanha.linhagem.nomes.map(([nome, frase], index) => (

@@ -21,7 +21,7 @@ export const campanha = {
   },
   linhagem: {
     eyebrow: "DE ONDE VEM ESSA LUTA",
-    titulo: "Cinco homens, uma só ideia.",
+    titulo: ["Cinco homens,", "uma só ideia."],
     apoio: "O trabalhismo brasileiro não nasceu ontem — e não terminou.",
     nomes: [
       ["Getúlio Vargas", "Não existe país soberano sem um Estado capaz de desenvolvê-lo."],

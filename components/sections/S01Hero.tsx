@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { campanha } from "@/content/campanha";
 
 /** SECAO 01 — A CHAMADA. Para o scroll e planta a tese. */
@@ -23,13 +24,25 @@ export default function S01Hero() {
         </div>
       </div>
       <div className="hero-portrait">
-        <span>
-          FOTO DO
-          <br />
-          CANDIDATO
-        </span>
-        <strong>4012</strong>
+        <Image
+          className="hero-image hero-image-desktop"
+          src="/hero-desktop.png"
+          alt="Imagem do candidato"
+          fill
+          priority
+          sizes="(max-width: 860px) 0vw, 35vw"
+        />
+        <Image
+          className="hero-image hero-image-mobile"
+          src="/hero-mobile.png"
+          alt="Imagem do candidato"
+          fill
+          priority
+          sizes="(max-width: 860px) 58vw, 0vw"
+        />
+        <div className="hero-vote"><span>DEPUTADO<br />FEDERAL</span><strong>4012</strong></div>
       </div>
+
       <svg
         className="hero-wave"
         viewBox="0 0 1000 100"

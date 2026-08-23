@@ -68,7 +68,12 @@ export default function S12Convite() {
             <a className="button button-light" href={CONFIG.WHATSAPP_URL}>
               Entrar no WhatsApp
             </a>
-            <a className="button button-outline-light" href={CONFIG.VAQUINHA_URL}>
+            <a
+              className="button button-outline-light"
+              href={CONFIG.VAQUINHA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Ajudar na vaquinha
             </a>
             <small>Prestação de contas aberta.</small>

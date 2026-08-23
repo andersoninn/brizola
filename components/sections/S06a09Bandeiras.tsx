@@ -12,7 +12,7 @@ export default function S06a09Bandeiras() {
           key={item.id}
         >
           <div className="flag-number" aria-hidden="true">
-            {index > 1 ? item.numero : ""}
+            {index > 3 ? item.numero : ""}
           </div>
           <Reveal>
             <span className="eyebrow">{item.inimigo}</span>
