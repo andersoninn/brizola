@@ -12,5 +12,22 @@ import S11Metas from "@/components/sections/S11Metas";
 import S12Convite from "@/components/sections/S12Convite";
 
 export default function Home() {
-  return <><Header /><main><S01Hero /><S02Promessa /><S04QuemEJoao /><S03Linhagem /><S05Inimigos /><S06a09Bandeiras /><S10Video /><S11Metas /><S12Convite /></main><Footer /><WhatsAppFloat /></>;
+  return (
+    <>
+      <Header />
+      <main>
+        <S01Hero />
+        <S02Promessa />
+        <S04QuemEJoao />
+        <S03Linhagem />
+        <S05Inimigos />
+        <S06a09Bandeiras />
+        <S10Video />
+        <S11Metas />
+        <S12Convite />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </>
+  );
 }
