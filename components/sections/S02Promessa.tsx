@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { campanha } from "@/content/campanha";
 import Reveal from "@/components/Reveal";
@@ -41,6 +42,14 @@ export default function S02Promessa() {
               </>
             ) : (
               <>
+                {/* TODO(campanha): imagem ilustrativa ate o video final entrar */}
+                <Image
+                  className="video-poster"
+                  src="/VIDEO-1.jpg"
+                  alt="Previa do video da campanha"
+                  fill
+                  sizes="(max-width: 860px) 92vw, 60vw"
+                />
                 <button
                   className="play"
                   type="button"
@@ -49,7 +58,6 @@ export default function S02Promessa() {
                 >
                   ▶
                 </button>
-                <small>VIDEO PRINCIPAL PENDENTE</small>
               </>
             )}
             <button

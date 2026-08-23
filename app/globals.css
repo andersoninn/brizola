@@ -1273,3 +1273,22 @@ main > section:nth-of-type(9) .deliveries p {
     padding-top: 110px;
   }
 }
+
+/* Imagens ilustrativas nos players enquanto o video final nao entra */
+.video-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.video-frame .play {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(10, 34, 68, 0.45);
+}
+.video-frame .video-close,
+.video-frame .fullscreen-hint {
+  z-index: 2;
+}

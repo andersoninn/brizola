@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { CONFIG } from "@/lib/config";
 
@@ -36,6 +37,14 @@ export default function S10Video() {
             </>
           ) : (
             <>
+              {/* TODO(campanha): imagem ilustrativa ate o video final entrar */}
+              <Image
+                className="video-poster"
+                src="/VIDEO-2.jpg"
+                alt="Previa do video em primeira pessoa"
+                fill
+                sizes="(max-width: 940px) 92vw, 900px"
+              />
               <button
                 className="play"
                 type="button"
@@ -44,7 +53,6 @@ export default function S10Video() {
               >
                 ▶
               </button>
-              <small>VIDEO PRINCIPAL PENDENTE</small>
             </>
           )}
           <button
