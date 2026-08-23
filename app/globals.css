@@ -1,3 +1,4 @@
+.flag-number { opacity:.04; }
 @import "tailwindcss";
 
 :root {
@@ -30,6 +31,8 @@ footer { background:var(--blue-900); color:var(--light); padding:45px max(8vw,28
 .lineage { background:var(--white); }
 .lineage-card { background:var(--light); }
 .lineage-card.featured { background:var(--blue-800); color:var(--white); }
+.lineage-card { background:var(--blue-900); color:var(--white); }
+.lineage-card h3 { color:var(--white); }
 .lineage .statement { color:var(--blue-title); }
 .profile h2 { color:var(--blue-title); }
 .profile .tags span { border-color:var(--blue-title); color:var(--blue-title); }
@@ -43,6 +46,16 @@ footer { background:var(--blue-900); color:var(--light); padding:45px max(8vw,28
 .first-flag h2,.first-flag .flag-promise { color:var(--blue-title); }
 .first-flag .deliveries h3 { color:var(--blue-title); }
 .first-flag .deliveries p { color:var(--ink); }
+.health-flag h2,.health-flag .flag-promise { color:var(--blue-title); }
+.health-flag h2 { color:#003b7a; }
+.health-flag .deliveries h3 { color:var(--blue-title); }
+.health-flag .deliveries p { color:var(--ink); }
+.party-flag h2 { color:var(--blue-700); }
+.party-flag .deliveries h3 { color:var(--blue-title); }
+.party-flag .deliveries p { color:var(--ink); }
+main > section:nth-of-type(9) h2 { color:var(--blue-title); }
+main > section:nth-of-type(9) .deliveries h3 { color:var(--blue-title); }
+main > section:nth-of-type(9) .deliveries p { color:var(--ink); }
 @media (min-width:861px) { .first-flag { grid-template-columns:1fr; } .first-flag .flag-number { display:none; } .first-flag > .reveal { grid-column:1; } }
 .first-flag { text-align:center; }
 .first-flag .flag-promise { margin-left:auto; margin-right:auto; }
@@ -58,6 +71,10 @@ footer { background:var(--blue-900); color:var(--light); padding:45px max(8vw,28
 @media (min-width:861px) { .hero:after { width:48%; height:100%; right:0; top:0; opacity:1; transform:none; clip-path:polygon(16% 0,100% 0,100% 100%,0 100%); } .hero-copy { width:52%; } .hero-portrait { right:10%; width:35%; height:72%; } }
 @media (min-width:861px) { .hero h1 { font-size:clamp(52px,7vw,106px); } .hero p { font-size:16px; max-width:500px; } .hero-portrait { height:68%; } }
 @media (min-width:861px) { .flag.alt { grid-template-columns:1fr 180px; } .flag.alt .flag-number { order:2; text-align:right; } .flag.alt > .reveal { order:1; } }
+.reveal { opacity:1; transform:none; }
+.video-section h2 { color:var(--blue-title); }
+.goals h2,.goals .goal-list span,.goals>div>strong { color:var(--blue-title); }
+.goals .goal-list b { color:var(--red); }
 .hero-wave { height:72px; bottom:0; left:0; width:100%; background:linear-gradient(to bottom, transparent 0 34%, var(--gray) 35%); clip-path:none; }
 .hero-wave::before,.hero-wave::after { content:""; position:absolute; left:-5%; width:110%; border-radius:50% 50% 0 0; transform:translateY(2px); }
 .hero-wave::before { top:-53px; height:96px; border:15px solid white; border-bottom:0; }
