@@ -40,7 +40,14 @@ export default function S01Hero() {
           priority
           sizes="(max-width: 860px) 58vw, 0vw"
         />
-        <div className="hero-vote"><span>DEPUTADO<br />FEDERAL</span><strong>4012</strong></div>
+        <div className="hero-vote">
+          <span>
+            DEPUTADO
+            <br />
+            FEDERAL
+          </span>
+          <strong className="ml-24 md:ml-0">4012</strong>
+        </div>
       </div>
 
       <svg

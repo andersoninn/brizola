@@ -1292,3 +1292,99 @@ main > section:nth-of-type(9) .deliveries p {
 .video-frame .fullscreen-hint {
   z-index: 2;
 }
+
+/* ===== HERO MOBILE — composicao do mock (apenas telas pequenas) ===== */
+@media (max-width: 860px) {
+  .hero {
+    min-height: 0;
+    align-items: flex-start;
+    padding-top: 44px;
+    padding-bottom: clamp(300px, 88vw, 470px);
+  }
+  .hero-copy {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: clamp(42px, 13.6vw, 54px);
+    margin: 14px 0;
+  }
+  /* subtitulo limitado a 70% da largura do hero */
+  .hero p {
+    max-width: 70%;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .hero-watermark {
+    display: none;
+  }
+  /* Camadas do hero em mobile, de baixo para cima:
+     2 = botao "Quero fazer parte"  (passa POR TRAS da foto)
+     3 = .hero-portrait (foto + bloco 4012)
+     4 = badge, h1, paragrafo e botao "Conheca a luta"
+     .hero-copy perde o proprio z-index para os filhos se ordenarem
+     livremente; sem isso nenhum deles consegue descer abaixo da foto. */
+  .hero-copy {
+    z-index: auto;
+  }
+  .hero-copy > .badge,
+  .hero-copy > h1,
+  .hero-copy > p,
+  .hero-actions .button-outline {
+    position: relative;
+    z-index: 4;
+  }
+  .hero-actions .button:first-child {
+    position: relative;
+    z-index: 2;
+  }
+  /* o retrato ocupa toda a largura do hero e serve de referencia ao bloco 4012.
+     a base fica travada em bottom: -60px; so o topo sobe ao crescer a altura. */
+  .hero-portrait {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: -60px;
+    width: auto;
+    height: clamp(480px, 152vw, 720px);
+    opacity: 1;
+    z-index: 3;
+    /* a foto cobre o botao "Quero fazer parte"; sem isto ela roubaria o clique */
+    pointer-events: none;
+  }
+  .hero-image-mobile {
+    display: block;
+    opacity: 1;
+    mix-blend-mode: normal;
+    transform: none;
+    object-fit: contain;
+    /* desloca para a direita so o quanto for preciso para o rosto
+       nao cair atras dos botoes; zera sozinho quando ha folga (>595px) */
+    object-position: calc(100% + max(0px, 250px - 42vw) + 5vw) calc(100% + 5vh);
+  }
+  .hero-vote {
+    left: 22px;
+    right: auto;
+    /* encosta o bloco logo abaixo dos botoes: parte do padding-bottom do hero
+       e desconta a altura do proprio bloco (2 linhas do rotulo + o numero).
+       Se os clamps de fonte abaixo mudarem, revise estes fatores. */
+    bottom: calc(
+      clamp(300px, 88vw, 470px) + 6px
+      - 5vh
+      - clamp(24px, 7.4vw, 44px) * 1.72
+      - clamp(84px, 25vw, 150px) * 0.8
+      - 4px
+    );
+    z-index: 3;
+  }
+  .hero-vote span {
+    font-size: clamp(24px, 7.4vw, 44px);
+  }
+  .hero-vote strong {
+    font-size: clamp(84px, 25vw, 150px);
+    margin-top: 4px;
+  }
+}
